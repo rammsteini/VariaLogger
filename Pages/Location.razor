@@ -10,8 +10,27 @@ Welcome to your new app.
 <button type="button" @onclick="WatchPosition">Watch position</button>
 <button type="button" @onclick="StopWatch">Stop watch</button>
 
-@if(currentPosition != null){
-    <div>Current position : 
+
+
+
+@if (isWatching)
+{
+    <p>
+        Speed: @currentSpeed km/h
+        <br>
+        Height: @currentAltitude m
+        <br>
+        Positions: @positioHistory.Count
+    </p>
+}
+
+<br />
+
+
+@if (currentPosition != null)
+{
+    <div>
+        Current position :
         <ul>
             <li>Latitude : @currentPosition.Coords.Latitude </li>
             <li>Longitude : @currentPosition.Coords.Longitude </li>
@@ -27,7 +46,8 @@ Welcome to your new app.
 Position History :
 @foreach (var item in positioHistory)
 {
-     <div> -----
+    <div>
+        -----
         <ul>
             <li>Latitude : @item.Coords.Latitude </li>
             <li>Longitude : @item.Coords.Longitude </li>
@@ -40,11 +60,16 @@ Position History :
     </div>
 }
 
-@code{
+@code {
     private WindowNavigatorGeolocation geolocationWrapper;
     private GeolocationPosition currentPosition;
     private List<GeolocationPosition> positioHistory = new List<GeolocationPosition>();
     private IAsyncDisposable geopositionWatcher;
+
+    private double? currentSpeed;
+    private double? currentAltitude;
+
+    private bool isWatching = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -53,31 +78,46 @@ Position History :
         geolocationWrapper = navigator.Geolocation;
     }
 
-     public async Task GetGeolocation()
+    public async Task GetGeolocation()
     {
         currentPosition = (await geolocationWrapper.GetCurrentPosition(new PositionOptions()
-        {
-            EnableHighAccuracy = true,
-            MaximumAgeTimeSpan = TimeSpan.FromHours(1),
-            TimeoutTimeSpan = TimeSpan.FromMinutes(1)
-        })).Location;
+            {
+                EnableHighAccuracy = true,
+                MaximumAgeTimeSpan = TimeSpan.FromHours(1),
+                TimeoutTimeSpan = TimeSpan.FromMinutes(1)
+            })).Location;
     }
 
-    public async Task WatchPosition(){
+    public async Task WatchPosition()
+    {
         geopositionWatcher = await geolocationWrapper.WatchPosition(async (p) =>
         {
             positioHistory.Add(p.Location);
+
+            currentSpeed = p.Location.Coords.Speed == null ? 0 : p.Location.Coords.Speed;
+            currentAltitude = p.Location.Coords.Altitude == null ? 0 : p.Location.Coords.Altitude;
+
             StateHasChanged();
         }
-        );
+        , new PositionOptions()
+            {
+                EnableHighAccuracy = true,
+                MaximumAgeTimeSpan = TimeSpan.FromHours(100),
+                TimeoutTimeSpan = TimeSpan.FromMinutes(100)
+            }
+            );
+        isWatching = true;
     }
 
-    public async Task StopWatch(){
+    public async Task StopWatch()
+    {
+        isWatching = false;
         await geopositionWatcher.DisposeAsync();
         geopositionWatcher = null;
     }
 
-    public async ValueTask DisposeAsync(){
+    public async ValueTask DisposeAsync()
+    {
         await StopWatch();
     }
 }
