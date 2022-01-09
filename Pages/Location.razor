@@ -53,9 +53,9 @@ Position History :
             <li>Longitude : @item.Coords.Longitude </li>
             <li>Altitude : @item.Coords.Altitude </li>
             <li>Accuracy : @item.Coords.Accuracy </li>
-            <li>Altitude Accuracy : @item.Coords.AltitudeAccuracy </li>
-            <li>Heading : @item.Coords.Heading </li>
-            <li>Speed : @item.Coords.Speed </li>
+            <li>Altitude Accuracy : @item.Coords.AltitudeAccuracy m</li>
+            <li>Heading : @item.Coords.Heading °</li>
+            <li>Speed : @item.Coords.Speed m/s</li>
         </ul>
     </div>
 }
@@ -94,7 +94,7 @@ Position History :
         {
             positioHistory.Add(p.Location);
 
-            currentSpeed = p.Location.Coords.Speed == null ? 0 : p.Location.Coords.Speed;
+            currentSpeed = p.Location.Coords.Speed == null ? 0 : p.Location.Coords.Speed * 3.6;
             currentAltitude = p.Location.Coords.Altitude == null ? 0 : p.Location.Coords.Altitude;
 
             StateHasChanged();
