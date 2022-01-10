@@ -61,7 +61,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-QLC30ktQh7M6QO3\/uIS0sUQO8uzWifMRv+qpPKoUjtU=",
+      "hash": "sha256-M5j+EGuVwCS58cY5vdgQHigf6B9wXW+GLKTM50II5G0=",
       "url": "index.html"
     },
     {
@@ -75,6 +75,10 @@
     {
       "hash": "sha256-4Yh4OTT5TEAPNyXEzOG+n5l2HPK294WFItz4SIelj88=",
       "url": "sample-data\/weather.json"
+    },
+    {
+      "hash": "sha256-t8PuEZglsaDduWpLrxfayPz+QPXISoe\/jo1nPqLtE\/E=",
+      "url": "script\/helper.js"
     },
     {
       "hash": "sha256-ssz2+b8Q8+yLpHAi4CymX9AQM22YoCq8Yq59bvvPpGI=",
@@ -109,12 +113,16 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-7I2fo5c7xYqn4Zdq22woZ0pZYxESjKLA73miMAGbBC0=",
+      "hash": "sha256-GfUxuLkKmc1l+EWROWmtmyzkAkghiBuHnflHZoy6BUc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
       "hash": "sha256-yp3i7GEMLeoGopzKPbmX4E5QwpaPiXZVcPZ4814zg84=",
       "url": "_framework\/Blazm.Bluetooth.dll"
+    },
+    {
+      "hash": "sha256-a5ErppkJNaFEYNlXyMjixOOoHRyVNC1agnEy8sJmyM4=",
+      "url": "_framework\/BlueToque.SharpGPX.dll"
     },
     {
       "hash": "sha256-zicoRqfdLgYZIfgv3UsYRNO8bKWCkzdOaAG4cacW1jI=",
@@ -181,7 +189,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-IkJzDaICvVDBY0WB9IA+kA5qKsqh80U\/OCG70ybqpbc=",
+      "hash": "sha256-BgPa1vFM8eI23nrRrShxd5v1DetA8QtQPUxrstSeNpI=",
       "url": "_framework\/netstandard.dll"
     },
     {
@@ -193,7 +201,7 @@
       "url": "_framework\/System.Collections.Concurrent.dll"
     },
     {
-      "hash": "sha256-esACuzY7EUeGgvfHhPTnKAfn4wmNPUbcdPgXW5tUvrQ=",
+      "hash": "sha256-3qoQ0ZOotXCly6YdUs6eeQ3OwIVxL22Zu0BiKGc4LGI=",
       "url": "_framework\/System.Collections.dll"
     },
     {
@@ -201,7 +209,7 @@
       "url": "_framework\/System.Collections.NonGeneric.dll"
     },
     {
-      "hash": "sha256-lrrtynX+JqR42ob9igDywsu2SAeCgmn\/7NoGD7CWkh0=",
+      "hash": "sha256-6VP0YH3fmjTanh8m0WcrgOdD7sxLf4TO+qv9LB4j3uI=",
       "url": "_framework\/System.Collections.Specialized.dll"
     },
     {
@@ -225,7 +233,7 @@
       "url": "_framework\/System.Data.Common.dll"
     },
     {
-      "hash": "sha256-XbVjrf7qiVlOCAWzD7pkDoEGBlrtSku79kGLyjzl2o8=",
+      "hash": "sha256-ooSetmWorGVom\/d\/hMiWyWonXpOM\/Qs61026L78q3q0=",
       "url": "_framework\/System.Diagnostics.TraceSource.dll"
     },
     {
@@ -241,7 +249,7 @@
       "url": "_framework\/System.Drawing.Primitives.dll"
     },
     {
-      "hash": "sha256-l45IoC\/kJNzjltq55kOLxSBMMcefqNGoZEDSa3S6EuQ=",
+      "hash": "sha256-9bgUfiEcyaKZ+oWHHccSZPBBH4OwXw2PlNvoKM+QJ7A=",
       "url": "_framework\/System.Linq.dll"
     },
     {
@@ -269,7 +277,7 @@
       "url": "_framework\/System.ObjectModel.dll"
     },
     {
-      "hash": "sha256-Es3f1eapR5Z1r5IYpN4xQyyDrixqjzvphxgoYclOzAI=",
+      "hash": "sha256-m04gRWespdR7X\/1CQCx+Svbwo\/HlU50tFhxej79JZpo=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -277,11 +285,11 @@
       "url": "_framework\/System.Private.Runtime.InteropServices.JavaScript.dll"
     },
     {
-      "hash": "sha256-iCKbBLv4w3MnIx8z6HCkdFWguM9Ewz5XywDWlQIYDtg=",
+      "hash": "sha256-Enz6Et0w9oxorXaBpjStrejej1TOcf8bnzCHqcezNDg=",
       "url": "_framework\/System.Private.Uri.dll"
     },
     {
-      "hash": "sha256-TmX9j3\/z7BL+wDP8Lk8fX4vMa6fMLLr0RxhavcL6DBM=",
+      "hash": "sha256-9XG4zwVxj0KLEcybS\/c6c34clekiQ8L5OB4oPeyxFuQ=",
       "url": "_framework\/System.Private.Xml.dll"
     },
     {
@@ -293,7 +301,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-QW0Y4geCvJJsu8Km7lsnS8Jcwq+5z5HuGNnUEOJy3WU=",
+      "hash": "sha256-xAvp33BdUSMCQvovsyxunFP2edVhZTo3XbS0SmZCN3w=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -333,7 +341,7 @@
       "url": "_framework\/System.Threading.dll"
     },
     {
-      "hash": "sha256-ILIwkRLZykQfOocvalDWR1B\/zg+oMdZKsMZ9HHIb03s=",
+      "hash": "sha256-0F7YYlBh3HcmsCp8FCSUBvHIDXju3JX60+4G39NhTNM=",
       "url": "_framework\/VariaLogger.dll"
     },
     {
@@ -349,5 +357,5 @@
       "url": "_content\/BrowserInterop\/scripts.js"
     }
   ],
-  "version": "9VMDeD8t"
+  "version": "QfjKZTt4"
 };
