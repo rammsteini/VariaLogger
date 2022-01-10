@@ -3,12 +3,15 @@
 
 @using Blazm.Bluetooth
 @using System.Text
+@using System.Timers
 @inject IBluetoothNavigator navigator
 
 
 <PageTitle>Varia Logger</PageTitle>
 
 <h1>Varia Logger</h1>
+
+<div>Time=@cnt</div>
 
 <button @onclick="Connect">Connect</button>
 
@@ -31,12 +34,12 @@ Distance: @distance m
 
 
 @*@for (var i = 0; i < 10; i++)
-{
+    {
     @if(Threats[i].active)
     {
-        <br />@Threats[i].speed
+    <br />@Threats[i].speed
     }
-}*@
+    }*@
 
 
 
@@ -53,6 +56,27 @@ Distance: @distance m
 
     string firmware = "";
     string name = "";
+
+    protected override void OnInitialized()
+    {
+        Ticker();
+        base.OnInitialized();
+    }
+
+    int cnt = 0;
+
+    // use an async-void or a timer. An async-void needs no cleanup. 
+    async void Ticker()
+    {
+        while(true)
+        {
+            await Task.Delay(1_000);
+            cnt++;
+
+            StateHasChanged();   // refresh everything
+        }
+    }
+
     protected async Task Connect()
     {
         lastTimestamp = DateTime.UtcNow;

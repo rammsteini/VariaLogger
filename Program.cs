@@ -11,4 +11,5 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 builder.Services.AddBlazmBluetooth();
 
+
 await builder.Build().RunAsync();
