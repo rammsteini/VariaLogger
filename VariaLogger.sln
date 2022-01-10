@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariaLogger", "VariaLogger.csproj", "{E58A2768-99B1-4484-8526-1B5AE386515B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariaLogger", "VariaLogger.csproj", "{374175AC-04A1-4645-B903-061E92F625F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E58A2768-99B1-4484-8526-1B5AE386515B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E58A2768-99B1-4484-8526-1B5AE386515B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E58A2768-99B1-4484-8526-1B5AE386515B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E58A2768-99B1-4484-8526-1B5AE386515B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374175AC-04A1-4645-B903-061E92F625F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374175AC-04A1-4645-B903-061E92F625F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374175AC-04A1-4645-B903-061E92F625F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374175AC-04A1-4645-B903-061E92F625F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C6320F41-6E57-4943-A8CA-A7C821572370}
+		SolutionGuid = {9333BCAA-407E-4896-A9B2-0E33C0F98BB7}
 	EndGlobalSection
 EndGlobal

@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Blazm.Bluetooth" Version="1.0.1" />
+    <PackageReference Include="BlueToque.SharpGPX" Version="2.21.801" />
     <PackageReference Include="BrowserInterop" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.1" PrivateAssets="all" />

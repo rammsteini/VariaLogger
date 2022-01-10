@@ -1,0 +1,26 @@
+﻿@page "/download"
+@using System.Text
+
+@inject HttpClient HttpClient
+@inject IJSRuntime JSRuntime
+
+@inject StateContainer StateContainer
+
+<PageTitle>Scan</PageTitle>
+
+<h1>Download</h1>
+
+
+<p>
+    <button class="btn btn-primary" @onclick="OnClickDownloadViaHttpClientButton">
+        <span class="oi oi-cloud-download" aria-hidden="true"></span>
+        Download a file from in-memory byte array inside of Blazor app
+    </button>
+</p>
+
+
+
+@code
+{
+    
+    }
