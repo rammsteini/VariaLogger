@@ -109,7 +109,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-o91rEIo\/U0Mi1cfC0g3LEj1DbxE0w+RPO6JOL1g7bVg=",
+      "hash": "sha256-FcpV5vnwjQf8oC7XhDWOZDRNF8ff1HnWpCx6odJnf6Y=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -293,7 +293,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-txPTY0u2bJaNQP6R3PCPPdW1FzFf5+yJ7i6WHu9eyR8=",
+      "hash": "sha256-QW0Y4geCvJJsu8Km7lsnS8Jcwq+5z5HuGNnUEOJy3WU=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -333,7 +333,7 @@
       "url": "_framework\/System.Threading.dll"
     },
     {
-      "hash": "sha256-xhuxYgmyzQ017CaB4eGVnSXOhinqInUiFocbv9gKDFk=",
+      "hash": "sha256-CgMzvlGeGfIXbJPDib9J3xurVMLwBcs6ay8ytNF9JTk=",
       "url": "_framework\/VariaLogger.dll"
     },
     {
@@ -349,5 +349,5 @@
       "url": "_content\/BrowserInterop\/scripts.js"
     }
   ],
-  "version": "VphrSgk0"
+  "version": "xtiqFRB9"
 };
