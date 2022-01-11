@@ -53,7 +53,7 @@ namespace VariaLogger.Pages
 				{
 					ByteArray = bytes,
 					FileName = filename + ".gpx",
-					ContentType = "text/plain"
+					ContentType = "application/gpx+xml"
 				});
 		}
 	}
