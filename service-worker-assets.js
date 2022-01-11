@@ -113,7 +113,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-GfUxuLkKmc1l+EWROWmtmyzkAkghiBuHnflHZoy6BUc=",
+      "hash": "sha256-1D9JybJyispKEC17gnOEeUzgeX3a1xrFXhMwcdx55IA=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -277,7 +277,7 @@
       "url": "_framework\/System.ObjectModel.dll"
     },
     {
-      "hash": "sha256-m04gRWespdR7X\/1CQCx+Svbwo\/HlU50tFhxej79JZpo=",
+      "hash": "sha256-4vYEJs7ZIY6SAGRzbRsgNDFIkO2Yv2e0MlmmNFgux5I=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -301,7 +301,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-xAvp33BdUSMCQvovsyxunFP2edVhZTo3XbS0SmZCN3w=",
+      "hash": "sha256-z5QGBlw0nmBgrxaL3yMtlWgaL72yDfdlGBC4Yo2BuUA=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -341,7 +341,11 @@
       "url": "_framework\/System.Threading.dll"
     },
     {
-      "hash": "sha256-0F7YYlBh3HcmsCp8FCSUBvHIDXju3JX60+4G39NhTNM=",
+      "hash": "sha256-q5wF4yjE0B6q2+AfPeMCLkozCGLhxCp8w3eJIcI8KhI=",
+      "url": "_framework\/System.Threading.Thread.dll"
+    },
+    {
+      "hash": "sha256-67BHvziKudqyv1ZoAjpsyJVN9xMMjODvwjVQEo8Xdno=",
       "url": "_framework\/VariaLogger.dll"
     },
     {
@@ -357,5 +361,5 @@
       "url": "_content\/BrowserInterop\/scripts.js"
     }
   ],
-  "version": "QfjKZTt4"
+  "version": "HyBsPS46"
 };
